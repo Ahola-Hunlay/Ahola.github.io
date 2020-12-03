@@ -10,7 +10,7 @@
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
@@ -19,5 +19,27 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>Restart</title>
+    <url>/2020/12/03/Restart/</url>
+    <content><![CDATA[<h2 id="重新开始"><a href="#重新开始" class="headerlink" title="重新开始"></a>重新开始</h2><p>我看到了形形色色的人</p>
+<p>也体会了待人处事的不易</p>
+<p>看到优秀的人总不顾及这些芝麻大的事情</p>
+<p>看到他们总是能一笑而过</p>
+<p>路边的石子确实稍显碍眼</p>
+<p>但又没有阻碍你前进的路</p>
+<p>不要为他们而停下追逐的脚步</p>
+<p>12月计划：</p>
+<p>CET6 </p>
+<p>搭建博客的小白级教程</p>
+<p>活动策划总结</p>
+<p>满绩</p>
+<p>3月计划：</p>
+<p>托福 90</p>
+]]></content>
+      <tags>
+        <tag>life</tag>
+      </tags>
   </entry>
 </search>
