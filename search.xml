@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Restart</title>
+    <url>/2020/12/03/Restart/</url>
+    <content><![CDATA[<h2 id="重新开始"><a href="#重新开始" class="headerlink" title="重新开始"></a>重新开始</h2><p>我看到了形形色色的人</p>
+<p>也体会了待人处事的不易</p>
+<p>看到优秀的人总不顾及这些芝麻大的事情</p>
+<p>看到他们总是能一笑而过</p>
+<p>路边的石子确实稍显碍眼</p>
+<p>但又没有阻碍你前进的路</p>
+<p>不要为他们而停下追逐的脚步</p>
+<p>12月计划：</p>
+<p>CET6 </p>
+<p>搭建博客的小白级教程</p>
+<p>活动策划总结</p>
+<p>满绩</p>
+<p>3月计划：</p>
+<p>托福 90</p>
+]]></content>
+      <tags>
+        <tag>life</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2020/12/02/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -22,27 +44,5 @@
       <categories>
         <category>前端</category>
       </categories>
-  </entry>
-  <entry>
-    <title>Restart</title>
-    <url>/2020/12/03/Restart/</url>
-    <content><![CDATA[<h2 id="重新开始"><a href="#重新开始" class="headerlink" title="重新开始"></a>重新开始</h2><p>我看到了形形色色的人</p>
-<p>也体会了待人处事的不易</p>
-<p>看到优秀的人总不顾及这些芝麻大的事情</p>
-<p>看到他们总是能一笑而过</p>
-<p>路边的石子确实稍显碍眼</p>
-<p>但又没有阻碍你前进的路</p>
-<p>不要为他们而停下追逐的脚步</p>
-<p>12月计划：</p>
-<p>CET6 </p>
-<p>搭建博客的小白级教程</p>
-<p>活动策划总结</p>
-<p>满绩</p>
-<p>3月计划：</p>
-<p>托福 90</p>
-]]></content>
-      <tags>
-        <tag>life</tag>
-      </tags>
   </entry>
 </search>
