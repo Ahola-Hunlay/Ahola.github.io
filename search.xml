@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>:title.md</title>
-    <url>/2020/12/07/title-md/</url>
-    <content><![CDATA[<img src="/2020/12/07/title-md/t.png" class title="This is an test image"> ]]></content>
-      <categories>
-        <category>blog</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Restart</title>
     <url>/2020/12/03/Restart/</url>
     <content><![CDATA[<h2 id="重新开始"><a href="#重新开始" class="headerlink" title="重新开始"></a>重新开始</h2><p>我看到了形形色色的人</p>
@@ -22,6 +10,7 @@
 <p>路边的石子确实稍显碍眼</p>
 <p>但又没有阻碍你前进的路</p>
 <p>不要为他们而停下追逐的脚步</p>
+<p>​    <a id="more"></a></p>
 <p>12月计划：</p>
 <p>CET6 </p>
 <p>搭建博客的小白级教程</p>
@@ -51,7 +40,7 @@
 <p>​       选择版本号 Git-2.29.2.2-64-bit.exe</p>
 </li>
 </ul>
-<p>​    </p>
+<p>​    <a id="more"></a></p>
 <h4 id="2-Github注册"><a href="#2-Github注册" class="headerlink" title="2.Github注册"></a>2.<a href="https://github.com/">Github</a>注册</h4><ul>
 <li><p> 个人网站的默认网址为：username.github.io </p>
 <p>   后续可绑定个人域名</p>
