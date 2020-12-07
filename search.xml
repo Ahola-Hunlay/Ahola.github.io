@@ -24,6 +24,11 @@
       </tags>
   </entry>
   <entry>
+    <title>hexo-next</title>
+    <url>/2020/12/07/hexo-next/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>hexo</title>
     <url>/2020/12/04/hexo/</url>
     <content><![CDATA[<h1 id="利用Hexo-Github搭建属于自己的网站——小白级教程"><a href="#利用Hexo-Github搭建属于自己的网站——小白级教程" class="headerlink" title="利用Hexo+Github搭建属于自己的网站——小白级教程"></a>利用Hexo+Github搭建属于自己的网站——小白级教程</h1><p>  希望大家可以利用这个教程，快速准确的搭建属于自己的博客噢！</p>
@@ -189,10 +194,5 @@
         <tag>hexo</tag>
         <tag>blog</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>hexo-next</title>
-    <url>/2020/12/07/hexo-next/</url>
-    <content><![CDATA[]]></content>
   </entry>
 </search>
