@@ -27,12 +27,19 @@
 <meta property="og:site_name" content="Ahola">
 <meta property="og:description" content="利用Hexo+Github搭建属于自己的网站——小白级教程  希望大家可以利用这个教程，快速准确的搭建属于自己的博客噢！ 1.软件安装 Node.js  Git  关于Node.js的安装教程参考  关于Git的安装教程参考   Way 1：官方下载（VPN开启全局代理，否则网速过慢）   Way 2：镜像下载 ​       选择版本号 Git-2.29.2.2-64-bit.exe   ​">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/2020/12/04/hexo/choose.png">
+<meta property="og:image" content="http://example.com/2020/12/04/hexo/branch.png">
+<meta property="og:image" content="http://example.com/2020/12/04/hexo/ssh.png">
+<meta property="og:image" content="http://example.com/2020/12/04/hexo/idrsa.png">
+<meta property="og:image" content="http://example.com/2020/12/04/hexo/setting.png">
+<meta property="og:image" content="http://example.com/2020/12/04/hexo/yes.png">
 <meta property="article:published_time" content="2020-12-04T14:10:23.000Z">
-<meta property="article:modified_time" content="2020-12-07T10:54:44.130Z">
+<meta property="article:modified_time" content="2020-12-07T12:07:59.870Z">
 <meta property="article:author" content="Ahola">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="blog">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2020/12/04/hexo/choose.png">
 
 <link rel="canonical" href="http://example.com/2020/12/04/hexo/">
 
@@ -220,7 +227,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-12-07 18:54:44" itemprop="dateModified" datetime="2020-12-07T18:54:44+08:00">2020-12-07</time>
+                <time title="Modified: 2020-12-07 20:07:59" itemprop="dateModified" datetime="2020-12-07T20:07:59+08:00">2020-12-07</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -238,14 +245,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>642</span>
+              <span>1.9k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>1 mins.</span>
+              <span>2 mins.</span>
             </span>
 
         </div>
@@ -286,14 +293,86 @@
 <p>​                 后续创建本地hexo博客的时候，文件夹名字一致</p>
 <p>​                 例如，我的用户名为Ahola-Hunlay，仓库应命名为Ahola-Hunlay.github.io </p>
 <ul>
-<li>打开Repository，点击Settings的Options</li>
-</ul>
-<p>​       Branch选择master，点击Save</p>
-<p>​       Choose a theme ，随意select一个主题，返回即可</p>
-<p>   ![theme](E:\Ahola-Hunlay.github.io\source_posts\hexo\屏幕截图 2020-12-07 185320.png)</p>
-<ul>
+<li><p>打开Repository，点击Settings的Options</p>
+<p>Branch选择master，点击Save</p>
+<p>Choose a theme ，随意select一个主题，返回即可</p>
+<p><strong><img src="/2020/12/04/hexo/choose.png" class title="This is an test image"></strong> </p>
+</li>
 <li><p>点击Settings的Branches，Default branch选择master</p>
-<p>![branch](E:\Ahola-Hunlay.github.io\source_posts\hexo\屏幕截图 2020-12-07 185403.png)</p>
+<p>   <strong><img src="/2020/12/04/hexo/branch.png" class title="This is an test image"></strong></p>
+</li>
+</ul>
+<p>​    </p>
+<h4 id="4-配置SSH-Keys"><a href="#4-配置SSH-Keys" class="headerlink" title="4.配置SSH Keys"></a>4.配置SSH Keys</h4><p> SSH Keys确保用户Github仓库内的博客内容是可以更新的</p>
+<ul>
+<li><p>检查现有SSH Keys</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~&#x2F;.ssh</span><br></pre></td></tr></table></figure>
+
+<p>显示 No such file or directory，这是因为我们第一次用Git</p>
+</li>
+<li><p>生成SSH Key</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &quot;邮件地址@youremail.com&quot;</span><br><span class="line">Generating public&#x2F;private rsa key pair.</span><br><span class="line">Enter file in which to save the key (&#x2F;Users&#x2F;your_user_directory&#x2F;.ssh&#x2F;id_rsa):&lt;回车就好&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>邮箱地址需要与Github注册邮箱一致</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Enter passphrase (empty for no passphrase):&lt;设置密码&gt;</span><br><span class="line">Enter same passphrase again:&lt;再次输入密码&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>该密码作为更新博客所需的输入密码，也可以不设置（建议设置）</li>
+</ul>
+<img src="/2020/12/04/hexo/ssh.png" class title="This is an test image">
+
+<p>看到以上界面，则成功设置SSH Key</p>
+<ul>
+<li>链接SSH Key与Github</li>
+</ul>
+<p>图片已告诉你id_rsa.pub文件存在哪里，例如我的：</p>
+<img src="/2020/12/04/hexo/idrsa.png" class title="This is an test image">
+
+<p>用记事本打开id_rsa.pub,复制全部内容，打开Github主页，点击右上角的Settings</p>
+<img src="/2020/12/04/hexo/setting.png" class title="This is an test image">
+
+<p>打开SSH and GPG keys一项，点击Add SSH key，复制全部内容，<strong>一定要给key写Title！！！</strong></p>
+</li>
+<li><p>在git bash 输入代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<p>回车看到如下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">The authenticity of host &#39;GitHub.com (207.97.227.239)&#39; can&#39;t be established.</span><br><span class="line">RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.</span><br><span class="line">Are you sure you want to continue connecting (yes&#x2F;no)</span><br></pre></td></tr></table></figure>
+
+<p>输入yes并回车</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Enter passphrase for key &#39;&#x2F;c&#x2F;Users&#x2F;1452&#x2F;.ssh&#x2F;id_rsa&#39;:</span><br></pre></td></tr></table></figure>
+
+<p>输入刚刚设置的密码，看到如下即为成功：</p>
+<img src="/2020/12/04/hexo/yes.png" class title="This is an test image">
+
+</li>
+</ul>
+<h4 id="5-设置个人信息"><a href="#5-设置个人信息" class="headerlink" title="5.设置个人信息"></a>5.设置个人信息</h4><p>冒号中内容替换成自己的username和email</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;Ahola&quot;</span><br><span class="line">$ git config --global user.email  &quot;Ahola-Hunlay@163.com&quot;</span><br></pre></td></tr></table></figure>
+
+<h4 id="6-创建Hexo博客"><a href="#6-创建Hexo博客" class="headerlink" title="6.创建Hexo博客"></a>6.创建Hexo博客</h4><ul>
+<li><p>安装hexo</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd</span><br><span class="line">$ npm install -g hexo</span><br></pre></td></tr></table></figure>
+
+<p>安装后关闭窗口。在合适的盘创建文件夹，命名为“username.github.io ”，<strong>必须与仓库同名！！！</strong></p>
+<p><strong>以后每次更新博客，必须在该文件夹下右键Git Bash here！</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>安装依赖</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>git部署</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git </span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>查看初始博客</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g&#x2F;&#x2F;生成更新后博客</span><br><span class="line">$ hexo s&#x2F;&#x2F;启动本地预览</span><br></pre></td></tr></table></figure>
+
+<p>接下来，我们可以在浏览器输入 localhost:4000 ，查看初始博客 </p>
 </li>
 </ul>
 
@@ -384,7 +463,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%A9%E7%94%A8Hexo-Github%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99%E2%80%94%E2%80%94%E5%B0%8F%E7%99%BD%E7%BA%A7%E6%95%99%E7%A8%8B"><span class="nav-number">1.</span> <span class="nav-text">利用Hexo+Github搭建属于自己的网站——小白级教程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">1.软件安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Github%E6%B3%A8%E5%86%8C"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">2.Github注册</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E5%88%9B%E5%BB%BARepository"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">3.创建Repository</span></a></li></ol></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%A9%E7%94%A8Hexo-Github%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99%E2%80%94%E2%80%94%E5%B0%8F%E7%99%BD%E7%BA%A7%E6%95%99%E7%A8%8B"><span class="nav-number">1.</span> <span class="nav-text">利用Hexo+Github搭建属于自己的网站——小白级教程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">1.软件安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Github%E6%B3%A8%E5%86%8C"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">2.Github注册</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E5%88%9B%E5%BB%BARepository"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">3.创建Repository</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-%E9%85%8D%E7%BD%AESSH-Keys"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">4.配置SSH Keys</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-%E8%AE%BE%E7%BD%AE%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF"><span class="nav-number">1.0.0.5.</span> <span class="nav-text">5.设置个人信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-%E5%88%9B%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2"><span class="nav-number">1.0.0.6.</span> <span class="nav-text">6.创建Hexo博客</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -456,12 +535,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="Symbols count total">1k</span>
+    <span title="Symbols count total">2k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">1 mins.</span>
+    <span title="Reading time total">2 mins.</span>
 </div>
 
 
