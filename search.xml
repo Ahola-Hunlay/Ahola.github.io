@@ -39,6 +39,7 @@
 <p>​       选择版本号 Git-2.29.2.2-64-bit.exe</p>
 </li>
 </ul>
+<p>​    </p>
 <h4 id="2-Github注册"><a href="#2-Github注册" class="headerlink" title="2.Github注册"></a>2.<a href="https://github.com/">Github</a>注册</h4><ul>
 <li><p> 个人网站的默认网址为：username.github.io </p>
 <p>   后续可绑定个人域名</p>
@@ -57,10 +58,10 @@
 </ul>
 <p>​       Branch选择master，点击Save</p>
 <p>​       Choose a theme ，随意select一个主题，返回即可</p>
-<p>   ![1607338007569](E:\Ahola-Hunlay.github.io\source_posts\hexo\choose a theme)</p>
+<p>   ![theme](E:\Ahola-Hunlay.github.io\source_posts\hexo\屏幕截图 2020-12-07 185320.png)</p>
 <ul>
 <li><p>点击Settings的Branches，Default branch选择master</p>
-<p><img src="/2020/12/04/hexo/Ahola-Hunlay.github.io\source_posts\hexo\branch" alt="1607184255942"></p>
+<p>![branch](E:\Ahola-Hunlay.github.io\source_posts\hexo\屏幕截图 2020-12-07 185403.png)</p>
 </li>
 </ul>
 ]]></content>
