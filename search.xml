@@ -26,27 +26,30 @@
     <title>hexo</title>
     <url>/2020/12/04/hexo/</url>
     <content><![CDATA[<h1 id="利用Hexo-Github搭建属于自己的网站——小白级教程"><a href="#利用Hexo-Github搭建属于自己的网站——小白级教程" class="headerlink" title="利用Hexo+Github搭建属于自己的网站——小白级教程"></a>利用Hexo+Github搭建属于自己的网站——小白级教程</h1><p>  希望大家可以利用这个教程，快速准确的搭建属于自己的博客噢！</p>
-<p>1、软件安装</p>
-<ul>
-<li><p> <a href="https://nodejs.org/en/">Node.js</a></p>
+<h4 id="1-软件安装"><a href="#1-软件安装" class="headerlink" title="1.软件安装"></a>1.软件安装</h4><ul>
+<li><p><a href="https://nodejs.org/en/">Node.js</a></p>
 </li>
 <li><p><a href="https://git-scm.com/">Git</a></p>
-<hr>
-<p><a href="https://jingyan.baidu.com/article/48b37f8dd141b41a646488bc.html">关于Node.js的安装教程参考</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/242540359">关于Git的安装教程参考</a></p>
+</li>
+<li><p><a href="https://jingyan.baidu.com/article/48b37f8dd141b41a646488bc.html">关于Node.js的安装教程参考</a></p>
+</li>
+<li><p><a href="https://zhuanlan.zhihu.com/p/242540359">关于Git的安装教程参考</a></p>
 <p>  Way 1：官方下载（VPN开启全局代理，否则网速过慢）</p>
 <p>  Way 2：<a href="https://npm.taobao.org/mirrors/git-for-windows/">镜像下载</a></p>
 <p>​       选择版本号 Git-2.29.2.2-64-bit.exe</p>
 </li>
 </ul>
-<p>2.<a href="https://github.com/">Github</a>注册</p>
-<p>   个人网站的默认网址为：username.github.io </p>
+<h4 id="2-Github注册"><a href="#2-Github注册" class="headerlink" title="2.Github注册"></a>2.<a href="https://github.com/">Github</a>注册</h4><ul>
+<li><p> 个人网站的默认网址为：username.github.io </p>
 <p>   后续可绑定个人域名</p>
-<p>3.创建Repository</p>
-<ul>
-<li>   点击右上角“+”，选择New repository</li>
+</li>
 </ul>
-<p>​          注：<strong>这里的仓库名一定要与Github的username保持一致！</strong></p>
+<h4 id="3-创建Repository"><a href="#3-创建Repository" class="headerlink" title="3.创建Repository"></a>3.创建Repository</h4><ul>
+<li> 点击右上角“+”，选择New repository<ul>
+<li>​   <strong>这里的仓库名一定要与Github的username保持一致！</strong></li>
+</ul>
+</li>
+</ul>
 <p>​                 后续创建本地hexo博客的时候，文件夹名字一致</p>
 <p>​                 例如，我的用户名为Ahola-Hunlay，仓库应命名为Ahola-Hunlay.github.io </p>
 <ul>
@@ -54,10 +57,10 @@
 </ul>
 <p>​       Branch选择master，点击Save</p>
 <p>​       Choose a theme ，随意select一个主题，返回即可</p>
-<p><img src="C:\Users\14529\AppData\Local\Temp\1607184073619.png" alt="1607184073619"></p>
+<p>   ![1607338007569](E:\Ahola-Hunlay.github.io\source_posts\hexo\choose a theme)</p>
 <ul>
 <li><p>点击Settings的Branches，Default branch选择master</p>
-<p><img src="C:\Users\14529\AppData\Local\Temp\1607184255942.png" alt="1607184255942"></p>
+<p><img src="/2020/12/04/hexo/Ahola-Hunlay.github.io\source_posts\hexo\branch" alt="1607184255942"></p>
 </li>
 </ul>
 ]]></content>
